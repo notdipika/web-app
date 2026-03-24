@@ -1,0 +1,55 @@
+<!-- Design a student registration form using HTML and CSS that collects user information such as username, email, password, age, gender, course and acceptance of terms and conditions. Use CSS to style the form elements including text fields, radio buttons, dropdown lists, and checkboxes to make the form visually appealingand user-friendly.
+ Apply layout techniques such as spacing, alignment, borders, background colours and font-styling to organize the form in the structured manner. Ensure that form validation messages and required fields aee clearly visible and highlight input fields are clearly visibleand highlight the input fields when focused. As a challange, use CSS to display a message box or style the alert area that appears if the user's age is 
+ less than 16 and apply hover or focus effects on the submit button to indicate interactivity.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+<body>
+    <body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <form onsubmit="return validateAge()" id="form">
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required placeholder="Enter your full name">
+
+            <label>Email Address:</label>
+            <input type="email" name="email" required placeholder="example@email.com">
+
+            <label>Password:</label>
+            <input type="password" name="password" required pattern=".{6,}" 
+                   title="Password must be at least 6 characters">
+
+            <label>Age:</label>
+            <input type="number" id="age" name="age" required min="1" max="100">
+            <div class="age-warning" id="ageWarning">Age must be 16 or older to register.</div>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <label>Course:</label>
+            <select name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+
+            <input type="checkbox" required> I accept the terms and conditions
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <script src="7.js"></script>
+</body>
+</html>

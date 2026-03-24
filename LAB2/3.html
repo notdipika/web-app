@@ -1,0 +1,97 @@
+<!-- Create a webpage that demonstrates CSS positioning and display properties. Use different elements and apply static, relative, absolute, fixed, and sticky positioning. Apply display values such as block, inline, inline-block, and none. Use z-index to show overlapping elements and apply overflow properties such as hidden, scroll and auto where necessary. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning & Display Demo</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    
+    <div class="fixed-header">
+        CSS Positioning & Display Interactive Demo
+    </div>
+
+    <div class="container">
+
+        <h1>Explore CSS Layout Behaviors</h1>
+        <div class="card static-box">
+            <h3>Static Position</h3>
+            <p>
+                This element follows the natural flow of the page.
+                It does not respond to top, left, right, or bottom properties.
+            </p>
+        </div>
+
+        <div class="card relative-box">
+            <h3>Relative Position</h3>
+            <p>
+                This container is positioned relative to itself.
+                The orange box inside is absolutely positioned.
+            </p>
+
+            <div class="absolute-box">
+                Absolute<br>Position
+            </div>
+        </div>
+
+        <div class="card sticky-box">
+            <h3>Sticky Position</h3>
+            <p>
+                Scroll the page — this card will stick to the top
+                when it reaches that position.
+            </p>
+        </div>
+
+        <div class="card overlap-section">
+            <h3>z-index Demonstration</h3>
+            <div class="overlap-container">
+                <div class="overlap box1">z-index: 1</div>
+                <div class="overlap box2">z-index: 2</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Display Properties</h3>
+
+            <div class="block-element">
+                Block: Takes full width
+            </div>
+
+            <span class="inline-element">Inline 1</span>
+            <span class="inline-element">Inline 2</span>
+
+            <div class="inline-block-element">
+                Inline-Block 1
+            </div>
+            <div class="inline-block-element">
+                Inline-Block 2
+            </div>
+
+            <div class="none-element">
+                Hidden Element
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Overflow Examples</h3>
+
+            <div class="overflow-hidden">
+                Hidden: Extra content is clipped and invisible beyond this box.
+            </div>
+
+            <div class="overflow-scroll">
+                Scroll: This box always allows scrolling inside it.
+                Try scrolling within this small area.
+            </div>
+
+            <div class="overflow-auto">
+                Auto: Scroll appears only when needed.
+                Resize the window to observe behavior.
+            </div>
+        </div>
+
+    </div>    
+</body>
+</html>

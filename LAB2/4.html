@@ -1,0 +1,63 @@
+<!-- Design a responsive webpage layout using CSS Flexbox. Create a container with multiple items and apply flexbox properties such as flex-direction, justify-content, align-items and flex-wrap. Demonstrate the use of flex-grow, flex-shrink and flex-basis on flex items. Use flexbox to design a navigation bar and a card-style layout that adjusts properly on different screen sizes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="4.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FlexDesign</div>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Responsive Layout using Flexbox</h1>
+        <p>
+            This webpage demonstrates flex-direction, alignment, wrapping,
+            and flex item properties in a modern responsive design.
+        </p>
+    </section>
+
+    <section class="card-container">
+
+        <div class="card grow">
+            <h3>Flex Grow</h3>
+            <p>
+                This card grows more than others because it has a higher
+                flex-grow value.
+            </p>
+        </div>
+
+        <div class="card normal">
+            <h3>Flex Basis</h3>
+            <p>
+                This card starts with a defined base width using flex-basis.
+            </p>
+        </div>
+
+        <div class="card shrink">
+            <h3>Flex Shrink</h3>
+            <p>
+                This card shrinks faster when space becomes limited.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Flexible Item</h3>
+            <p>
+                Cards automatically wrap to the next line when the screen
+                becomes smaller.
+            </p>
+        </div>
+
+    </section>
+</body>
+</html>

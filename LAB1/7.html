@@ -1,0 +1,84 @@
+<!-- 7. Create a webpage using HTML only that demonstrates the use of
+different types of lists. Display an unordered list showing at least
+five favorite subjects or skills and an ordered list showing three
+daily activities or steps of a process. Also include a description list
+(<dl>) with at least two terms and their corresponding descriptions.
+Demonstrate list nesting by placing one list inside another and as a
+mini challenge, change the list style using the type attribute and
+create a mixed list where an unordered list is placed inside an
+ordered list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle Lists</title>
+</head>
+<body>
+
+    <h1>Healthy Lifestyle Lists</h1>
+
+    <h2>Favorite Healthy Foods (Unordered List)</h2>
+    <ul type="circle">
+        <li>Fruits
+            <ul type="square">
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Berries</li>
+            </ul>
+        </li>
+        <li>Vegetables</li>
+        <li>Whole Grains</li>
+        <li>Nuts & Seeds</li>
+        <li>Legumes</li>
+    </ul>
+
+    <h2>Daily Routine (Ordered List)</h2>
+    <ol type="1">
+        <li>Morning Exercise
+            <ul type="disc">
+                <li>Stretching</li>
+                <li>Jogging / Walking</li>
+            </ul>
+        </li>
+        <li>Healthy Breakfast</li>
+        <li>Work / Study with Short Breaks</li>
+        <li>Balanced Lunch</li>
+        <li>Evening Relaxation</li>
+    </ol>
+
+    <h2>Healthy Habits (Description List)</h2>
+    <dl>
+        <dt>Hydration</dt>
+        <dd>Drink at least 8 glasses of water per day to stay hydrated.</dd>
+        <dt>Sleep</dt>
+        <dd>Get 7-8 hours of sleep each night to allow your body to recover.</dd>
+    </dl>
+
+    <h2>Weekly Health Goals (Mixed List)</h2>
+    <ol type="A">
+        <li>Exercise Goals
+            <ul type="circle">
+                <li>3 cardio sessions</li>
+                <li>2 strength training sessions</li>
+                <li>1 yoga session</li>
+            </ul>
+        </li>
+        <li>Nutrition Goals
+            <ul type="square">
+                <li>Eat 5 servings of vegetables daily</li>
+                <li>Include protein in every meal</li>
+                <li>Limit processed sugars</li>
+            </ul>
+        </li>
+        <li>Wellness Goals
+            <ul type="disc">
+                <li>Meditate 10 minutes daily</li>
+                <li>Read at least 1 book per week</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!-- 3. Create a student registration form using HTML only that collects
+user information such as full name, email, password, age, gender,
+course and acceptance of terms and conditions. Use appropriate
+form elements including text fields, radio buttons, dropdown lists
+and checkboxes. Apply basic HTML validation using attributes
+such as required, min, max and pattern. As a challenge, prevent
+the form from being submitted if the user’s age is less than 16 and
+display an alert message saying “Registration Successful” when
+the form is submitted successfully. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form onsubmit="return validateAge()" id="form">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required 
+               placeholder="Enter your full name"><br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email" required 
+               placeholder="example@email.com"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" required 
+               pattern=".{6,}" 
+               title="Password must be at least 6 characters"><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" id="age" name="age" required 
+               min="1" max="100"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <label>Course:</label><br>
+        <select name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Electronics">Electronics</option>
+        </select><br><br>
+
+        <input type="checkbox" required>
+        I accept the terms and conditions<br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function validateAge() {
+            var age = document.getElementById("age").value;
+
+            if (age < 16) {
+                alert("You must be at least 16 years old to register.");
+                return false;
+            } else {
+                alert("Registration Successful");
+                return true; 
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
