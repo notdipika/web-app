@@ -1,0 +1,23 @@
+<!-- Create a multi-line HTML template using template literals and 
+insert it into the DOM. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content"></div>
+    <script>
+        const htmltemplate=`
+        <div>
+            <h1>Hello</h1>
+            <p>This is a multi-line HTML template using template literals.</p>
+        </div>`
+        document.querySelector('.content').innerHTML=htmltemplate;    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- Create a registration form with the following fields: username, 
+email, role (dropdown: Student or Teacher), password, confirm 
+password,  full name, email, password, age, gender, course and 
+acceptance of terms and conditions. Validate the form according to 
+these rules: 
+a. Email must match the role: 
+i.  If Student → email must end with @student.edu.np 
+ii.  If Teacher → email must end with @tutor.edu.np 
+b. Confirm Password must match Password. 
+Highlight invalid inputs with a red border and show error 
+messages. Prevent form submission if any validation fails.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <form id="registrationForm" novalidate>
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <div class="error-message" id="usernameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName">
+            <div class="error-message" id="fullNameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role">
+                <option value="">Select Role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+            <div class="error-message" id="roleError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <div class="error-message" id="confirmPasswordError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" id="age">
+            <div class="error-message" id="ageError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="error-message" id="genderError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course</label>
+            <input type="text" id="course">
+            <div class="error-message" id="courseError"></div>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms">
+            <label for="terms">I accept the terms and conditions</label>
+            <div class="error-message" id="termsError"></div>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+   
+    <script src="2.js"></script>
+</body>
+</html>

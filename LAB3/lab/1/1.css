@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#controls {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+#addBtn {
+    background-color: green;
+    color: white;
+}
+
+#removeBtn {
+    background-color: red;
+    color: white;
+    }
+
+#inputSection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #cceeff;
+    padding: 5px;
+}
+
+#itemList {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#itemList li {
+    background-color: yellow;
+    margin: 2px 0;
+    padding: 2px 5px;
+}
