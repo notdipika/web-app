@@ -3,7 +3,8 @@ body
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
 }
 
@@ -14,6 +15,7 @@ form
     border-radius: 8px;
     width: 400px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
 }
 
 h2 
@@ -43,18 +45,6 @@ input, select
     border-radius: 4px;
 }
 
-input.error, select.error 
-{
-    border-color: red;
-}
-
-.error-message 
-{
-    color: red;
-    font-size: 13px;
-    margin-top: 3px;
-}
-
 button 
 {
     width: 100%;
@@ -70,4 +60,40 @@ button
 button:hover 
 {
     background-color: #45a049;
+}
+
+table 
+{
+    width: 600px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td 
+{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn 
+{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.delete-btn:hover 
+{
+    background-color: darkred;
 }

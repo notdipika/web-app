@@ -100,7 +100,8 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         document.getElementById("termsError").textContent = "You must accept the terms.";
     }
 
-    if(valid) {
+    if(valid) 
+    {
         alert("Form submitted successfully!");
     }
 });

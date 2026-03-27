@@ -1,17 +1,21 @@
-body {
+body 
+{
     font-family: Arial, sans-serif;
     padding: 30px;
 }
 
-h2 {
+h2 
+{
     margin-bottom: 10px;
 }
 
-#controls {
+#controls 
+{
     margin-bottom: 10px;
 }
 
-button {
+button 
+{
     padding: 5px 10px;
     margin-right: 5px;
     font-size: 14px;
@@ -20,29 +24,34 @@ button {
     border-radius: 3px;
 }
 
-#addBtn {
+#addBtn 
+{
     background-color: green;
     color: white;
 }
 
-#removeBtn {
+#removeBtn 
+{
     background-color: red;
     color: white;
-    }
+}
 
-#inputSection {
+#inputSection 
+{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #cceeff;
     padding: 5px;
 }
 
-#itemList {
+#itemList 
+{
     list-style-type: disc;
     padding-left: 20px;
 }
 
-#itemList li {
+#itemList li 
+{
     background-color: yellow;
     margin: 2px 0;
     padding: 2px 5px;
